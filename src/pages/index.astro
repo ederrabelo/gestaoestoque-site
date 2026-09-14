@@ -2,14 +2,26 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
+import Benefits from "../components/Benefits.astro";
+import Pricing from "../components/Pricing.astro";
+import FAQ from "../components/FAQ.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout
-  title="Controle seu estoque sem complicação"
-  description="Controle produtos, estoque e vendas de forma simples e organizada. Crie sua conta e teste gratuitamente por 7 dias."
+  title="Controle de estoque simples"
+  description="Controle produtos, estoque e vendas de forma simples e organizada. Crie sua conta e teste gratuitamente por 7 dias, sem cadastrar cartão de crédito."
 >
   <Header />
-  <Hero />
+
+  <main>
+    <Hero />
+    <Benefits />
+    <Pricing />
+    <FAQ />
+    <FinalCTA />
+  </main>
+
   <Footer />
 </BaseLayout>
