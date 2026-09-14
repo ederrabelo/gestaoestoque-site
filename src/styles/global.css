@@ -82,7 +82,8 @@
   --color-info-950: #012a4a;
 
   --font-sans: "Geist Variable", sans-serif;
-  --font-mono: "Geist Mono Variable", monospace;
+  --font-mono:
+    ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -142,6 +143,11 @@ body {
   opacity: 0.82;
 }
 
+:where(a, button, summary):focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
 .hero-grid {
   background-image:
     linear-gradient(rgb(148 163 184 / 0.08) 1px, transparent 1px),
@@ -157,7 +163,6 @@ body {
     rgb(59 130 246 / 0.06) 35%,
     transparent 70%
   );
-  filter: blur(10px);
 }
 
 @media (prefers-color-scheme: dark) {

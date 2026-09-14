@@ -2,7 +2,7 @@
 import { urls } from "../config/urls";
 ---
 
-<main>
+<div>
   <section class="relative overflow-hidden">
     <div
       class="hero-grid pointer-events-none absolute inset-x-0 top-0 -z-20 h-[700px]"
@@ -79,7 +79,7 @@ import { urls } from "../config/urls";
               <span class="h-2.5 w-2.5 rounded-full bg-emerald-400 dark:bg-emerald-500"></span>
             </div>
 
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1 font-mono text-[10px] text-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400">
+            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1 font-mono text-[10px] text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300">
               gestaoestoque.app/dashboard
             </span>
 
@@ -117,7 +117,7 @@ import { urls } from "../config/urls";
                     Seu estabelecimento
                   </p>
 
-                  <p class="mt-0.5 text-[10px] text-slate-400">
+                  <p class="mt-0.5 text-[10px] text-slate-600 dark:text-slate-300">
                     Acompanhe alertas de estoque, resultados de vendas e produtos que precisam de atenção.
                   </p>
                 </div>
@@ -162,7 +162,7 @@ import { urls } from "../config/urls";
                     Produtos cadastrados
                   </p>
 
-                  <p class="mt-0.5 text-[8px] leading-3 text-slate-400">
+                  <p class="mt-0.5 text-[8px] leading-3 text-slate-600 dark:text-slate-300">
                     Itens no catálogo
                   </p>
                 </article>
@@ -196,7 +196,7 @@ import { urls } from "../config/urls";
                     Categorias
                   </p>
 
-                  <p class="mt-0.5 text-[8px] leading-3 text-slate-400">
+                  <p class="mt-0.5 text-[8px] leading-3 text-slate-600 dark:text-slate-300">
                     Organização do catálogo
                   </p>
                 </article>
@@ -227,7 +227,7 @@ import { urls } from "../config/urls";
                     Vendas concluídas
                   </p>
 
-                  <p class="mt-0.5 text-[8px] leading-3 text-slate-400">
+                  <p class="mt-0.5 text-[8px] leading-3 text-slate-600 dark:text-slate-300">
                     Total registrado
                   </p>
                 </article>
@@ -257,7 +257,7 @@ import { urls } from "../config/urls";
                   <p class="mt-0.5 text-[9px] font-semibold leading-3.5 text-slate-600 dark:text-slate-300">
                     Vendas canceladas
                   </p>
-                  <p class="mt-0.5 text-[8px] leading-3 text-slate-400">
+                  <p class="mt-0.5 text-[8px] leading-3 text-slate-600 dark:text-slate-300">
                     Total cancelado
                   </p>
                 </article>
@@ -287,7 +287,7 @@ import { urls } from "../config/urls";
                   <p class="mt-0.5 text-[9px] font-semibold leading-3.5 text-slate-600 dark:text-slate-300">
                     Estoque baixo
                   </p>
-                  <p class="mt-0.5 text-[8px] leading-3 text-slate-400">
+                  <p class="mt-0.5 text-[8px] leading-3 text-slate-600 dark:text-slate-300">
                     De 1 a 5 unidades
                   </p>
                 </article>
@@ -320,7 +320,7 @@ import { urls } from "../config/urls";
                   <p class="mt-0.5 text-[9px] font-semibold leading-3.5 text-slate-600 dark:text-slate-300">
                     Sem estoque
                   </p>
-                  <p class="mt-0.5 text-[8px] leading-3 text-slate-400">
+                  <p class="mt-0.5 text-[8px] leading-3 text-slate-600 dark:text-slate-300">
                     Produtos esgotados
                   </p>
                 </article>
@@ -354,7 +354,7 @@ import { urls } from "../config/urls";
                       Evolução das vendas
                     </p>
 
-                    <p class="mt-0.5 text-[9px] text-slate-400">
+                    <p class="mt-0.5 text-[9px] text-slate-600 dark:text-slate-300">
                       Faturamento e vendas concluídas ao longo do período
                     </p>
                   </div>
@@ -543,7 +543,7 @@ import { urls } from "../config/urls";
 
         </div>
 
-        <aside class="relative z-30 mx-4 -mt-7 overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-950/95 px-4 py-3.5 text-white shadow-[0_16px_40px_-20px_rgb(15_23_42/0.9)] backdrop-blur-xl sm:mx-8">
+        <aside class="relative z-30 mx-4 -mt-7 overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-950 px-4 py-3.5 text-white shadow-[0_16px_40px_-20px_rgb(15_23_42/0.9)] sm:mx-8">
           <span class="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-brand-400/80 to-transparent"></span>
           <span class="absolute -top-8 left-1/2 h-14 w-40 -translate-x-1/2 rounded-full bg-brand-500/10 blur-2xl"></span>
 
@@ -581,47 +581,20 @@ import { urls } from "../config/urls";
       </div>
     </div>
   </section>
-</main>
+</div>
 
 <style>
   .stock-alert-card {
     --dashboard-alert-rest: rgb(148 163 184 / 0.45);
-    --dashboard-alert-peak: rgb(148 163 184 / 0.9);
-    --dashboard-alert-ring: rgb(148 163 184 / 0.12);
     border-color: var(--dashboard-alert-rest);
-    animation: dashboard-stock-alert-pulse 3s ease-in-out infinite;
   }
 
   .stock-alert-card--low {
     --dashboard-alert-rest: rgb(237 108 2 / 0.42);
-    --dashboard-alert-peak: rgb(237 108 2 / 0.88);
-    --dashboard-alert-ring: rgb(237 108 2 / 0.14);
   }
 
   .stock-alert-card--out {
     --dashboard-alert-rest: rgb(211 47 47 / 0.42);
-    --dashboard-alert-peak: rgb(211 47 47 / 0.88);
-    --dashboard-alert-ring: rgb(211 47 47 / 0.14);
   }
 
-  @keyframes dashboard-stock-alert-pulse {
-    0%,
-    100% {
-      border-color: var(--dashboard-alert-rest);
-      box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
-    }
-
-    50% {
-      border-color: var(--dashboard-alert-peak);
-      box-shadow:
-        0 0 0 3px var(--dashboard-alert-ring),
-        0 8px 18px -12px var(--dashboard-alert-peak);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .stock-alert-card {
-      animation: none;
-    }
-  }
 </style>

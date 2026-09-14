@@ -1,6 +1,5 @@
 ---
 import "@fontsource-variable/geist/wght.css";
-import "@fontsource-variable/geist-mono/wght.css";
 import "../styles/global.css";
 
 interface Props {
@@ -9,10 +8,24 @@ interface Props {
 }
 
 const {
-  title = "Controle de estoque simples",
+  title = "Sistema de gestão de estoque e vendas | gestaoestoque.app",
   description =
     "Controle produtos, estoque e vendas de forma simples e organizada.",
 } = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "gestaoestoque.app",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description,
+  offers: {
+    "@type": "Offer",
+    price: "199.00",
+    priceCurrency: "BRL",
+  },
+};
 ---
 
 <!doctype html>
@@ -24,12 +37,28 @@ const {
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f8fafc" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="gestaoestoque.app" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
 
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
 
   <body>
+    <a
+      href="#conteudo"
+      class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition-transform focus:translate-y-0 dark:bg-white dark:text-slate-950"
+    >
+      Ir para o conteúdo
+    </a>
     <slot />
   </body>
 </html>
