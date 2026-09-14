@@ -1,6 +1,5 @@
 ---
-const loginUrl = "https://auth-hmg.gestaoestoque.app/login";
-const signupUrl = "https://hmg.gestaoestoque.app/signup";
+import { urls } from "../config/urls";
 ---
 
 <main>
@@ -35,7 +34,7 @@ const signupUrl = "https://hmg.gestaoestoque.app/signup";
 
         <div class="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
-            href={signupUrl}
+            href={urls.signup}
             class="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 text-sm font-semibold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
           >
             Testar grátis por 7 dias
@@ -57,7 +56,7 @@ const signupUrl = "https://hmg.gestaoestoque.app/signup";
           </a>
 
           <a
-            href={loginUrl}
+            href={urls.login}
             class="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-700 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white"
           >
             Já tenho uma conta
