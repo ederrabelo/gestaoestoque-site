@@ -1,155 +1,167 @@
+---
+const questions = [
+  {
+    id: "politica-de-uso",
+    question: "Existe limite de produtos, vendas ou categorias?",
+    answer:
+      "No Plano Gestão Completa, você pode cadastrar produtos, categorias e usuários, registrar vendas e movimentações à vontade, sem limites de quantidade ou cobrança adicional na operação do seu estabelecimento. A política de uso existe apenas para impedir abusos, como automações mal-intencionadas, geração de registros para sobrecarregar o sistema ou outras ações de má-fé que prejudiquem o serviço. O crescimento e o uso legítimo da sua operação não são considerados abuso.",
+  },
+  {
+    question: "Posso cadastrar toda a minha equipe?",
+    answer:
+      "Sim. Você pode cadastrar seus funcionários e organizar cargos e acessos sem pagar um valor adicional por usuário.",
+  },
+  {
+    question: "Vocês ajudam a colocar o sistema em funcionamento?",
+    answer:
+      "Sim. A implantação é acompanhada e sua equipe recebe orientação para começar a usar o sistema com segurança e sem complicação.",
+  },
+  {
+    question: "Como funciona o suporte?",
+    answer:
+      "O atendimento é humano, direto e prioritário para orientar sua equipe e resolver dúvidas. Situações críticas de indisponibilidade recebem atenção emergencial.",
+  },
+  {
+    question: "O sistema continuará recebendo melhorias?",
+    answer:
+      "Sim. Atualizações funcionais, correções e melhorias de segurança fazem parte da assinatura e são disponibilizadas conforme a evolução do produto.",
+  },
+  {
+    question: "Quais são as formas de pagamento?",
+    answer:
+      "A assinatura pode ser paga por Pix, boleto ou cartão de crédito, nas modalidades mensal ou anual.",
+  },
+  {
+    question: "Preciso instalar alguma coisa?",
+    answer:
+      "Não. O sistema funciona pelo navegador e pode ser acessado diretamente pelo computador, celular ou tablet.",
+  },
+];
+---
+
 <section
   id="faq"
   class="border-y border-slate-200/80 bg-white py-20 dark:border-slate-800 dark:bg-slate-900 sm:py-24"
 >
   <div class="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8">
-    <div class="max-w-2xl">
-      <p
-        class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400"
-      >
+    <div data-reveal class="max-w-2xl">
+      <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400">
         Dúvidas frequentes
       </p>
-
-      <h2
-        class="mt-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl"
-      >
-        Antes de começar.
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl">
+        Tudo claro antes de começar.
       </h2>
-
       <p class="mt-4 text-base leading-7 text-slate-600 dark:text-slate-400">
-        As principais informações sobre o período de teste e a assinatura.
+        Entenda o que está incluído no plano e como sua equipe será acompanhada.
       </p>
     </div>
-
     <div class="mt-10 divide-y divide-slate-200 dark:divide-slate-800">
-      <details class="group py-5 first:pt-0">
-        <summary
-          class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-slate-900 dark:text-slate-100"
+      {questions.map(({ id, question, answer }, index) => (
+        <details
+          id={id}
+          data-reveal
+          class:list={[
+            "faq-item group overflow-hidden py-5",
+            { "first:pt-0": index === 0 },
+          ]}
         >
-          Preciso cadastrar cartão de crédito para testar?
-
-          <span
-            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 transition-transform group-open:rotate-45 dark:bg-slate-800 dark:text-slate-400"
-            aria-hidden="true"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-slate-900 dark:text-slate-100">
+            {question}
+            <span
+              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+              aria-hidden="true"
             >
-              <path d="M12 5v14"></path>
-              <path d="M5 12h14"></path>
-            </svg>
-          </span>
-        </summary>
-
-        <p class="mt-3 max-w-3xl pr-12 text-sm leading-6 text-slate-500 dark:text-slate-400">
-          Não. Você pode criar sua conta e usar o app gratuitamente por 7 dias sem
-          cadastrar cartão de crédito.
-        </p>
-      </details>
-
-      <details class="group py-5">
-        <summary
-          class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-slate-900 dark:text-slate-100"
-        >
-          O que acontece quando os 7 dias terminarem?
-
-          <span
-            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 transition-transform group-open:rotate-45 dark:bg-slate-800 dark:text-slate-400"
-            aria-hidden="true"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5v14"></path>
-              <path d="M5 12h14"></path>
-            </svg>
-          </span>
-        </summary>
-
-        <p class="mt-3 max-w-3xl pr-12 text-sm leading-6 text-slate-500 dark:text-slate-400">
-          Ao final do período gratuito, você decide se deseja continuar usando o
-          sistema por meio da assinatura do plano Essencial.
-        </p>
-      </details>
-
-      <details class="group py-5">
-        <summary
-          class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-slate-900 dark:text-slate-100"
-        >
-          Posso cancelar a assinatura quando quiser?
-
-          <span
-            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 transition-transform group-open:rotate-45 dark:bg-slate-800 dark:text-slate-400"
-            aria-hidden="true"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5v14"></path>
-              <path d="M5 12h14"></path>
-            </svg>
-          </span>
-        </summary>
-
-        <p class="mt-3 max-w-3xl pr-12 text-sm leading-6 text-slate-500 dark:text-slate-400">
-          Sim. A assinatura pode ser cancelada a qualquer momento.
-        </p>
-      </details>
-
-      <details class="group py-5">
-        <summary
-          class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-slate-900 dark:text-slate-100"
-        >
-          Preciso instalar alguma coisa?
-
-          <span
-            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 transition-transform group-open:rotate-45 dark:bg-slate-800 dark:text-slate-400"
-            aria-hidden="true"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5v14"></path>
-              <path d="M5 12h14"></path>
-            </svg>
-          </span>
-        </summary>
-
-        <p class="mt-3 max-w-3xl pr-12 text-sm leading-6 text-slate-500 dark:text-slate-400">
-          Não. O app funciona pelo navegador e pode ser acessado diretamente pelo
-          computador, celular ou tablet.
-        </p>
-      </details>
-
-
+              <svg
+                class="transition-transform duration-300 ease-out group-open:rotate-45"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p class="mt-3 max-w-3xl pr-12 text-sm leading-6 text-slate-500 dark:text-slate-400">
+              {answer}
+            </p>
+          </div>
+        </details>
+      ))}
     </div>
   </div>
 </section>
+
+<script>
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  document.querySelectorAll<HTMLDetailsElement>(".faq-item").forEach((item) => {
+    const summary = item.querySelector<HTMLElement>("summary");
+    if (!summary) return;
+    let animation: Animation | null = null;
+    let expanded = item.open;
+
+    const openFromLink = () => {
+      animation?.cancel();
+      animation = null;
+      expanded = true;
+      item.open = true;
+      item.classList.add("is-visible");
+    };
+
+    if (item.id) {
+      document
+        .querySelectorAll<HTMLAnchorElement>(`a[href="#${item.id}"]`)
+        .forEach((link) => {
+          link.addEventListener("click", () => {
+            openFromLink();
+            summary.focus({ preventScroll: true });
+          });
+        });
+      const openFromHash = () => {
+        if (window.location.hash === `#${item.id}`) openFromLink();
+      };
+      window.addEventListener("hashchange", openFromHash);
+      openFromHash();
+    }
+
+    summary.addEventListener("click", (event) => {
+      event.preventDefault();
+      const startHeight = item.getBoundingClientRect().height;
+      animation?.cancel();
+      expanded = !expanded;
+
+      if (reduceMotion.matches) {
+        item.open = expanded;
+        return;
+      }
+
+      // Measure the actual closed box, including its padding and borders.
+      item.open = expanded;
+      const endHeight = item.getBoundingClientRect().height;
+      item.open = true;
+      animation = item.animate(
+        { height: [`${startHeight}px`, `${endHeight}px`] },
+        { duration: 280, easing: "cubic-bezier(0.4, 0, 0.2, 1)", fill: "both" },
+      );
+      animation.onfinish = () => {
+        item.open = expanded;
+        animation?.cancel();
+        animation = null;
+      };
+    });
+  });
+</script>
+
+<style>
+  .faq-item summary {
+    border-radius: 0.75rem;
+    transition: color 180ms ease;
+  }
+</style>

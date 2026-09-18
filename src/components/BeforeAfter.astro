@@ -1,0 +1,131 @@
+<section id="como-funciona" class="py-20 sm:py-24">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <div data-reveal class="mx-auto max-w-2xl text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400">
+        Antes e depois
+      </p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl">
+        Da incerteza para uma operação sob controle.
+      </h2>
+      <p class="mt-4 text-base leading-7 text-slate-600 dark:text-slate-400">
+        Menos tempo procurando informações. Mais clareza para comprar, vender e
+        decidir.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-5 lg:grid-cols-2">
+      <article
+        data-reveal
+        class="comparison-card interactive-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8"
+      >
+        <div class="flex items-center gap-3">
+          <span class="comparison-icon flex h-10 w-10 items-center justify-center rounded-xl bg-error-50 text-error-700 dark:bg-error-950/60 dark:text-error-300">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18M6 6l12 12"></path>
+            </svg>
+          </span>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.16em] text-error-700 dark:text-error-300">
+              Antes
+            </p>
+            <h3 class="mt-0.5 text-xl font-bold text-slate-950 dark:text-white">
+              Informação espalhada e decisões no escuro
+            </h3>
+          </div>
+        </div>
+        <ul class="mt-7 space-y-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
+            Registros em papéis, cadernos e sistemas antigos.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
+            Contas manuais e conferências que consomem tempo.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
+            Dificuldade para saber a quantidade real de cada produto.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
+            Risco de perder registros, repetir tarefas e comprar errado.
+          </li>
+        </ul>
+      </article>
+
+      <article
+        data-reveal
+        class="comparison-card interactive-card relative overflow-hidden rounded-3xl border border-brand-200 bg-brand-50/60 p-6 shadow-sm dark:border-brand-900/70 dark:bg-brand-950/20 sm:p-8"
+      >
+        <div
+          class="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-brand-500/10 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div class="relative">
+          <div class="flex items-center gap-3">
+            <span class="comparison-icon flex h-10 w-10 items-center justify-center rounded-xl bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="m5 12 4 4L19 6"></path>
+              </svg>
+            </span>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-success-700 dark:text-success-300">
+                Depois
+              </p>
+              <h3 class="mt-0.5 text-xl font-bold text-slate-950 dark:text-white">
+                Uma fonte confiável para toda a operação
+              </h3>
+            </div>
+          </div>
+          <ul class="mt-7 space-y-4 text-sm leading-6 text-slate-700 dark:text-slate-200">
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
+              Estoque centralizado e acessível pelo computador ou celular.
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
+              Vendas e movimentações registradas em poucos passos.
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
+              Indicadores e alertas para agir antes que o produto acabe.
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
+              Equipe trabalhando com os mesmos dados, de forma simples e
+              organizada.
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .comparison-icon {
+    transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .comparison-card:hover .comparison-icon {
+      transform: scale(1.08) rotate(-3deg);
+    }
+  }
+</style>

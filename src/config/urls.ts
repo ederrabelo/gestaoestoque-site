@@ -1,16 +1,13 @@
-const appUrl = import.meta.env.PUBLIC_APP_URL;
 const authUrl = import.meta.env.PUBLIC_AUTH_URL;
+const salesMessage = encodeURIComponent(
+  "Olá! Quero conhecer o gestaoestoque.app e entender como ele pode ajudar minha operação.",
+);
 
-console.log("PUBLIC_APP_URL:", appUrl);
-console.log("PUBLIC_AUTH_URL:", authUrl);
-
-if (!appUrl || !authUrl) {
-  throw new Error(
-    "PUBLIC_APP_URL e PUBLIC_AUTH_URL precisam estar configuradas.",
-  );
+if (!authUrl) {
+  throw new Error("PUBLIC_AUTH_URL precisa estar configurada.");
 }
 
 export const urls = {
   login: `${authUrl}/login`,
-  signup: `${appUrl}/signup`,
+  sales: `https://wa.me/5565981659293?text=${salesMessage}`,
 };

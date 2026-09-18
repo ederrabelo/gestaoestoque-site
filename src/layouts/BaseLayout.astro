@@ -9,8 +9,7 @@ interface Props {
 
 const {
   title = "Sistema de gestão de estoque e vendas | gestaoestoque.app",
-  description =
-    "Controle produtos, estoque e vendas de forma simples e organizada.",
+  description = "Controle produtos, estoque e vendas de forma simples e organizada.",
 } = Astro.props;
 
 const structuredData = {
@@ -22,7 +21,7 @@ const structuredData = {
   description,
   offers: {
     "@type": "Offer",
-    price: "199.00",
+    price: "799.00",
     priceCurrency: "BRL",
   },
 };
@@ -50,8 +49,14 @@ const structuredData = {
 
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
 
+    <script is:inline>
+      document.documentElement.classList.add("motion-ready");
+    </script>
     <title>{title}</title>
-    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    ></script>
   </head>
 
   <body>
@@ -62,5 +67,32 @@ const structuredData = {
       Ir para o conteúdo
     </a>
     <slot />
+    <script>
+      const animatedItems =
+        document.querySelectorAll<HTMLElement>("[data-reveal]");
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      if (reduceMotion || !("IntersectionObserver" in window)) {
+        animatedItems.forEach((item) => item.classList.add("is-visible"));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -40px" },
+        );
+
+        animatedItems.forEach((item, index) => {
+          item.style.transitionDelay = `${Math.min(index % 4, 3) * 55}ms`;
+          observer.observe(item);
+        });
+      }
+    </script>
   </body>
 </html>

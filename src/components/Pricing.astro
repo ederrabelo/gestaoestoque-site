@@ -1,249 +1,111 @@
 ---
 import { urls } from "../config/urls";
+
+const features = [
+  "Produtos, categorias, vendas e movimentações sem limite",
+  "Funcionários e níveis de acesso sem cobrança adicional",
+  "Dashboard com indicadores e alertas de estoque",
+  "Implantação acompanhada e treinamento da equipe",
+  "Acesso pelo computador, celular e tablet",
+  "Suporte humano direto e prioritário",
+  "Atualizações funcionais e de segurança incluídas",
+  "Pagamento por Pix, boleto ou cartão de crédito",
+];
 ---
 
-<section id="plano" class="py-20 sm:py-24">
+<section
+  id="plano"
+  class="border-t border-slate-200/80 bg-white py-20 dark:border-slate-800 dark:bg-slate-900 sm:py-24"
+>
   <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <p
-        class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400"
-      >
-        Plano
+    <div data-reveal class="mx-auto max-w-2xl text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400">
+        Plano Gestão Completa
       </p>
-
-      <h2
-        class="mt-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl"
-      >
-        Simples também na hora de assinar.
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-4xl">
+        Preço previsível. Operação sem limites.
       </h2>
-
       <p class="mt-4 text-base leading-7 text-slate-600 dark:text-slate-400">
-        Um plano direto ao ponto, com acesso aos recursos.
+        Uma única assinatura para organizar o estoque e dar à sua equipe a
+        clareza que precisa para trabalhar.
       </p>
     </div>
 
     <div class="mx-auto mt-10 max-w-xl">
       <article
-        class="relative overflow-hidden rounded-3xl border border-brand-200 bg-white p-6 shadow-[0_24px_70px_-35px_rgb(37_99_235/0.45)] dark:border-brand-900/70 dark:bg-slate-900 sm:p-8"
+        data-reveal
+        class="plan-card interactive-card relative overflow-hidden rounded-3xl border border-brand-200 bg-white p-6 shadow-[0_24px_70px_-35px_rgb(37_99_235/0.45)] dark:border-brand-900/70 dark:bg-slate-900 sm:p-8"
       >
         <div
           class="pointer-events-none absolute -right-24 -top-24 h-56 w-56 rounded-full bg-brand-500/10 blur-3xl"
           aria-hidden="true"
         ></div>
-
         <div class="relative">
-          <div>
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <p
-                class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400"
-              >
-                Essencial
+              <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400">
+                Gestão Completa
               </p>
-
               <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-                Tudo o que você precisa para começar.
+                Software, implantação e suporte em um só plano.
               </p>
             </div>
-
+            <span class="w-fit rounded-full bg-success-50 px-3 py-1 text-xs font-semibold text-success-700 dark:bg-success-950/60 dark:text-success-300">
+              Sem cobrança por usuário
+            </span>
           </div>
 
-          <div class="mt-8 flex items-end gap-2">
-            <span
-              class="text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-5xl"
-            >
-              R$ 199
-            </span>
-
-            <span class="pb-1 text-sm font-medium text-slate-500 dark:text-slate-400">
-              /mês
-            </span>
+          <div class="mt-8">
+            <div class="flex items-end gap-2">
+              <span class="text-4xl font-bold tracking-tight text-slate-950 dark:text-white sm:text-5xl">
+                R$ 799
+              </span>
+              <span class="pb-1 text-sm font-medium text-slate-500 dark:text-slate-400">
+                /mês
+              </span>
+            </div>
+            <div class="mt-4 flex flex-col items-center gap-1.5 rounded-2xl border border-brand-100 bg-brand-50/70 px-4 py-5 text-center dark:border-brand-900/60 dark:bg-brand-950/30">
+              <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                Ou R$ 699/mês no plano anual
+              </p>
+              <p class="text-base font-bold text-success-700 dark:text-success-300">
+                Economize R$ 1.200 por ano
+              </p>
+            </div>
           </div>
 
           <ul class="mt-8 space-y-3.5">
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Produtos, categorias e controle de estoque
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Registro e acompanhamento de vendas
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Dashboard com indicadores da operação
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Alertas de produtos com baixo estoque ou esgotado
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Funcionários com cargos e acessos diferentes
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Acesso pelo computador e celular
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Suporte incluído
-            </li>
-
-            <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
-              <span
-                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300"
-              >
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="m5 12 4 4L19 6"></path>
-                </svg>
-              </span>
-
-              Atualizações e melhorias incluídas
-            </li>
+            {features.map((feature) => (
+              <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300">
+                <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-success-50 text-success-700 dark:bg-success-950/60 dark:text-success-300">
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m5 12 4 4L19 6"></path>
+                  </svg>
+                </span>
+                {feature}
+              </li>
+            ))}
           </ul>
 
           <a
-            href={urls.signup}
+            href={urls.sales}
+            target="_blank"
+            rel="noopener noreferrer"
             class="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 text-sm font-semibold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
           >
-            Testar grátis por 7 dias
-
+            Falar com a equipe de vendas
             <svg
+              class="plan-arrow transition-transform duration-300"
               width="17"
               height="17"
               viewBox="0 0 24 24"
@@ -258,13 +120,30 @@ import { urls } from "../config/urls";
               <path d="m13 6 6 6-6 6"></path>
             </svg>
           </a>
-
           <p class="mt-4 text-center text-xs leading-5 text-slate-500 dark:text-slate-400">
-            Teste por 7 dias sem cadastrar cartão de crédito. A assinatura pode
-            ser cancelada a qualquer momento.
+            Converse com nossa equipe para conhecer o sistema e planejar a
+            implantação na sua operação.
           </p>
+          <p class="mt-2 text-center text-[11px] leading-5 text-slate-400 dark:text-slate-500">
+            Sem limites para a operação do seu estabelecimento, seguindo as
+            diretrizes da nossa política de uso.
+          </p>
+          <a
+            href="#politica-de-uso"
+            class="mx-auto mt-1 block w-fit rounded text-center text-xs font-medium leading-6 text-brand-700 underline decoration-brand-300 underline-offset-4 transition-colors hover:text-brand-600 dark:text-brand-300 dark:hover:text-brand-200"
+          >
+            Ler mais sobre a política de uso
+          </a>
         </div>
       </article>
     </div>
   </div>
 </section>
+
+<style>
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .plan-card:hover .plan-arrow {
+      transform: translateX(4px);
+    }
+  }
+</style>

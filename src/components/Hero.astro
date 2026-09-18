@@ -15,7 +15,7 @@ import { urls } from "../config/urls";
     ></div>
 
     <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 pb-20 pt-16 sm:px-6 sm:pt-20 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-8 lg:pb-28 lg:pt-24">
-      <div class="max-w-2xl">
+      <div data-reveal class="max-w-2xl">
         <h1 class="text-[clamp(2.7rem,7vw,4.75rem)] font-bold leading-[0.98] tracking-[-0.045em] text-slate-950 dark:text-white">
           Seu estoque sob controle.
           <span class="text-brand-600 dark:text-brand-400">
@@ -25,16 +25,18 @@ import { urls } from "../config/urls";
         </h1>
 
         <p class="mt-6 max-w-xl text-base leading-7 text-slate-600 dark:text-slate-300 sm:text-lg sm:leading-8">
-          Organize produtos, acompanhe o estoque e registre suas vendas em um
-          sistema simples, rápido e feito para facilitar sua operação.
+          Substitua papéis, contas manuais e sistemas complicados por uma visão
+          clara da sua operação — com implantação e suporte humano de verdade.
         </p>
 
         <div class="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
-            href={urls.signup}
+            href={urls.sales}
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-brand-600 px-6 text-sm font-semibold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
           >
-            Testar grátis por 7 dias
+            Falar com a equipe de vendas
             <svg
               width="17"
               height="17"
@@ -52,20 +54,20 @@ import { urls } from "../config/urls";
           </a>
 
           <a
-            href={urls.login}
+            href="#como-funciona"
             class="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-700 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:bg-slate-800 dark:hover:text-white"
           >
-            Já tenho uma conta
+            Ver como funciona
           </a>
         </div>
 
         <p class="mt-6 max-w-xl text-sm leading-6 text-slate-500 dark:text-slate-400">
-          Teste grátis por 7 dias, sem cadastrar cartão de crédito. Depois,
-          assine somente se quiser e cancele a assinatura a qualquer momento.
+          Implantação acompanhada, treinamento da equipe e suporte direto para
+          colocar sua operação em ordem desde o primeiro dia.
         </p>
       </div>
 
-      <div class="hero-preview relative lg:pl-2">
+      <div data-reveal class="hero-preview relative lg:pl-2">
         <div
           class="absolute -inset-4 -z-10 rounded-[2rem] bg-brand-500/5 blur-2xl dark:bg-brand-500/10"
           aria-hidden="true"
@@ -118,7 +120,8 @@ import { urls } from "../config/urls";
                   </p>
 
                   <p class="mt-0.5 text-[10px] text-slate-600 dark:text-slate-300">
-                    Acompanhe alertas de estoque, resultados de vendas e produtos que precisam de atenção.
+                    Acompanhe alertas de estoque, resultados de vendas e
+                    produtos que precisam de atenção.
                   </p>
                 </div>
               </div>
@@ -540,15 +543,14 @@ import { urls } from "../config/urls";
               </div>
             </div>
           </div>
-
         </div>
 
-        <aside class="relative z-30 mx-4 -mt-7 overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-950 px-4 py-3.5 text-white shadow-[0_16px_40px_-20px_rgb(15_23_42/0.9)] sm:mx-8">
-          <span class="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-brand-400/80 to-transparent"></span>
-          <span class="absolute -top-8 left-1/2 h-14 w-40 -translate-x-1/2 rounded-full bg-brand-500/10 blur-2xl"></span>
+        <aside class="relative z-30 mx-4 -mt-7 overflow-hidden rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-3.5 text-slate-900 shadow-[0_16px_40px_-20px_rgb(15_23_42/0.15)] dark:border-slate-700/80 dark:bg-slate-950 dark:text-white dark:shadow-[0_16px_40px_-20px_rgb(15_23_42/0.9)] sm:mx-8">
+          <span class="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-brand-200/60 to-transparent dark:via-brand-400/80"></span>
+          <span class="absolute -top-8 left-1/2 h-14 w-40 -translate-x-1/2 rounded-full bg-brand-500/5 blur-2xl dark:bg-brand-500/10"></span>
 
           <div class="relative flex items-center gap-3">
-            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-brand-400/20 bg-brand-400/10 text-brand-300">
+            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-brand-200/60 bg-brand-50 text-brand-600 dark:border-brand-400/20 dark:bg-brand-400/10 dark:text-brand-300">
               <svg
                 width="16"
                 height="16"
@@ -568,10 +570,10 @@ import { urls } from "../config/urls";
             </span>
 
             <div class="min-w-0">
-              <p class="text-xs font-semibold leading-4 text-white sm:text-[13px] sm:leading-5">
+              <p class="text-xs font-semibold leading-4 text-slate-900 dark:text-white sm:text-[13px] sm:leading-5">
                 O dashboard vai muito além desta visão.
               </p>
-              <p class="mt-0.5 text-[10px] leading-4 text-slate-400 sm:text-[11px] sm:leading-[1.125rem]">
+              <p class="mt-0.5 text-[10px] leading-4 text-slate-600 dark:text-slate-400 sm:text-[11px] sm:leading-[1.125rem]">
                 Analise vendas por categoria, produtos mais vendidos, itens sem
                 giro e outros indicadores da sua operação.
               </p>
@@ -596,5 +598,4 @@ import { urls } from "../config/urls";
   .stock-alert-card--out {
     --dashboard-alert-rest: rgb(211 47 47 / 0.42);
   }
-
 </style>
