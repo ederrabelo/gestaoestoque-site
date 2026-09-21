@@ -1,4 +1,7 @@
-<section id="como-funciona" class="py-20 sm:py-24">
+<section
+  id="como-funciona"
+  class="border-y border-slate-200/80 bg-white py-20 dark:border-slate-800 dark:bg-slate-900 sm:py-24"
+>
   <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
     <div data-reveal class="mx-auto max-w-2xl text-center">
       <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700 dark:text-brand-400">
@@ -8,15 +11,15 @@
         Da incerteza para uma operação sob controle.
       </h2>
       <p class="mt-4 text-base leading-7 text-slate-600 dark:text-slate-400">
-        Menos tempo procurando informações. Mais clareza para comprar, vender e
-        decidir.
+        Uma rotina mais simples, previsível e tranquila — da abertura ao
+        fechamento da operação.
       </p>
     </div>
 
-    <div class="mt-12 grid gap-5 lg:grid-cols-2">
+    <div class="mt-12 grid items-stretch gap-5 lg:grid-cols-[minmax(0,1fr)_4rem_minmax(0,1fr)] lg:gap-4">
       <article
         data-reveal
-        class="comparison-card interactive-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-8"
+        class="comparison-card interactive-card rounded-3xl border border-slate-200 bg-slate-50/70 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950/50 sm:p-8"
       >
         <div class="flex items-center gap-3">
           <span class="comparison-icon flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-error-50 text-error-700 dark:bg-error-950/60 dark:text-error-300">
@@ -39,29 +42,55 @@
               Antes
             </p>
             <h3 class="mt-0.5 text-xl font-bold text-slate-950 dark:text-white">
-              Informação espalhada e decisões no escuro
+              A rotina depende de memória e improviso
             </h3>
           </div>
         </div>
         <ul class="mt-7 space-y-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
           <li class="flex gap-3">
             <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
-            Registros em papéis, cadernos e sistemas antigos.
+            A equipe perde tempo procurando informações e conferindo números.
           </li>
           <li class="flex gap-3">
             <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
-            Contas manuais e conferências que consomem tempo.
+            Divergências só aparecem quando já viraram um problema urgente.
           </li>
           <li class="flex gap-3">
             <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
-            Dificuldade para saber a quantidade real de cada produto.
+            Compras são feitas no susto ou com base apenas na intuição.
           </li>
           <li class="flex gap-3">
             <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
-            Risco de perder registros, repetir tarefas e comprar errado.
+            Informações importantes dependem de uma pessoa estar por perto.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-error-500"></span>
+            O dia termina sem uma visão clara do que aconteceu e do que fazer a
+            seguir.
           </li>
         </ul>
       </article>
+
+      <div
+        data-reveal
+        class="relative z-10 -my-1 flex items-center justify-center lg:my-0 lg:-mx-2"
+        aria-hidden="true"
+      >
+        <span class="transition-arrow flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-brand-600 text-white shadow-[0_12px_30px_-8px_rgb(37_99_235/0.65)] ring-4 ring-brand-100 dark:border-slate-900 dark:ring-brand-950">
+          <svg
+            class="h-6 w-6 rotate-90 lg:rotate-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m13 6 6 6-6 6"></path>
+          </svg>
+        </span>
+      </div>
 
       <article
         data-reveal
@@ -93,27 +122,58 @@
                 Depois
               </p>
               <h3 class="mt-0.5 text-xl font-bold text-slate-950 dark:text-white">
-                Uma fonte confiável para toda a operação
+                Mais clareza para trabalhar e crescer
               </h3>
             </div>
           </div>
           <ul class="mt-7 space-y-4 text-sm leading-6 text-slate-700 dark:text-slate-200">
             <li class="flex gap-3">
               <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
-              Estoque centralizado e acessível pelo computador ou celular.
+              <span>
+                <strong class="font-semibold text-slate-900 dark:text-white">
+                  Respostas mais rápidas:
+                </strong>{" "}
+                menos tempo procurando informações e mais tempo cuidando do
+                negócio.
+              </span>
             </li>
             <li class="flex gap-3">
               <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
-              Vendas e movimentações registradas em poucos passos.
+              <span>
+                <strong class="font-semibold text-slate-900 dark:text-white">
+                  Problemas antecipados:
+                </strong>{" "}
+                a equipe percebe o que precisa de atenção antes que vire uma
+                urgência.
+              </span>
             </li>
             <li class="flex gap-3">
               <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
-              Indicadores e alertas para agir antes que o produto acabe.
+              <span>
+                <strong class="font-semibold text-slate-900 dark:text-white">
+                  Compras mais conscientes:
+                </strong>{" "}
+                menos excessos, menos faltas e mais segurança para planejar.
+              </span>
             </li>
             <li class="flex gap-3">
               <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
-              Equipe trabalhando com os mesmos dados, de forma simples e
-              organizada.
+              <span>
+                <strong class="font-semibold text-slate-900 dark:text-white">
+                  Rotina compartilhada:
+                </strong>{" "}
+                as informações não ficam presas a uma única pessoa.
+              </span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-success-500"></span>
+              <span>
+                <strong class="font-semibold text-slate-900 dark:text-white">
+                  Decisões mais tranquilas:
+                </strong>{" "}
+                uma visão clara do dia para corrigir rotas e aproveitar
+                oportunidades.
+              </span>
             </li>
           </ul>
         </div>
@@ -125,6 +185,26 @@
 <style>
   .comparison-icon {
     transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .transition-arrow {
+    animation: arrow-pulse 2.8s ease-in-out infinite;
+  }
+
+  @keyframes arrow-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .transition-arrow {
+      animation: none;
+    }
   }
 
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {
