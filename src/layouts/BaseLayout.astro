@@ -19,11 +19,22 @@ const structuredData = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description,
-  offers: {
-    "@type": "Offer",
-    price: "799.00",
-    priceCurrency: "BRL",
-  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Plano Gestão Completa mensal",
+      price: "399.00",
+      priceCurrency: "BRL",
+      description: "Mensal, sem prazo mínimo de permanência.",
+    },
+    {
+      "@type": "Offer",
+      name: "Plano Gestão Completa anual",
+      price: "349.00",
+      priceCurrency: "BRL",
+      description: "Valor mensal com compromisso mínimo de 12 meses.",
+    },
+  ],
 };
 ---
 
