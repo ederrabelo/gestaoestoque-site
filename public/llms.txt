@@ -1,0 +1,19 @@
+# gestaoestoque.app
+
+> Sistema web de gestão de estoque e vendas, com indicadores, backups diários e suporte humano. Um produto da 1908 Soluções.
+
+Esta é a página pública de apresentação do produto. A empresa responsável é a 1908 TECNOLOGIA DA INFORMACAO LTDA, CNPJ 69.201.479/0001-20.
+
+Consulte a página do plano para os preços e condições atuais. O acesso ao sistema exige autenticação; esta landing não oferece ferramentas públicas para consultar ou alterar dados dos clientes.
+
+## Informações do produto
+
+- [Página inicial](https://use.gestaoestoque.app/): Apresentação do gestaoestoque.app.
+- [Como funciona](https://use.gestaoestoque.app/#como-funciona): Visão geral da organização da operação com o sistema.
+- [Plano e funcionalidades](https://use.gestaoestoque.app/#plano): Recursos incluídos, preço e condições comerciais.
+- [Perguntas frequentes](https://use.gestaoestoque.app/#faq): Respostas sobre limites, suporte, atualizações, backups e acesso.
+
+## Contato e acesso
+
+- [Contato por e-mail](mailto:contato@1908solucoes.com.br): Canal de contato com a empresa responsável.
+- [Entrar no sistema](https://auth.gestaoestoque.app/login): Área autenticada para clientes.
