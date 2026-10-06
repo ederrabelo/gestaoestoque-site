@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = "Sistema de gestão de estoque e vendas | gestaoestoque.app",
-  description = "Controle produtos, estoque e vendas de forma simples e organizada.",
+  description = "Controle de estoque e vendas com indicadores, backups diários e suporte humano direto.",
 } = Astro.props;
 
 const structuredData = {
@@ -19,11 +19,15 @@ const structuredData = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description,
-  offers: {
-    "@type": "Offer",
-    price: "799.00",
-    priceCurrency: "BRL",
-  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Plano Gestão Completa mensal",
+      price: "299.00",
+      priceCurrency: "BRL",
+      description: "Mensal, sem prazo mínimo de permanência.",
+    },
+  ],
 };
 ---
 
@@ -34,8 +38,8 @@ const structuredData = {
     <meta name="viewport" content="width=device-width" />
 
     <meta name="description" content={description} />
-    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
-    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     <meta name="theme-color" content="#f8fafc" />
 
     <meta property="og:type" content="website" />
