@@ -1,5 +1,5 @@
 const salesMessage = encodeURIComponent(
-  "Olá! Quero conhecer o gestaoestoque.app e entender como ele pode ajudar minha operação.",
+  "Olá! Gostaria de saber mais sobre o sistema de gestão de estoque",
 );
 
 export const urls = {
