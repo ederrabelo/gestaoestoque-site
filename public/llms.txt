@@ -11,7 +11,7 @@ Consulte a página do plano para os preços e condições atuais. O acesso ao si
 - [Página inicial](https://use.gestaoestoque.app/): Apresentação do gestaoestoque.app.
 - [Como funciona](https://use.gestaoestoque.app/#como-funciona): Visão geral da organização da operação com o sistema.
 - [Plano e funcionalidades](https://use.gestaoestoque.app/#plano): Recursos incluídos, preço e condições comerciais.
-- [Perguntas frequentes](https://use.gestaoestoque.app/#faq): Respostas sobre limites, suporte, atualizações, backups e acesso.
+- [Perguntas frequentes](https://use.gestaoestoque.app/#faq): Respostas sobre uso indevido, escopo do suporte e acesso.
 
 ## Contato e acesso
 
